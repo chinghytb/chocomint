@@ -54,7 +54,7 @@ async function commandHandler(interaction) {
 
   if (command.cooldown) {
       if (Timeout.has(`${command.name}${interaction.user.id}`)) return interaction.reply({
-         content: `⏲️ | You are on a \`${ms(Timeout.get(`${command.name}${interaction.user.id}`) - Date.now(), { long: true })}\` cooldown.`,
+         content: `⏲️ | 你需要再等待 \`${ms(Timeout.get(`${command.name}${interaction.user.id}`) - Date.now(), { long: true })}\` 才能再次使用此指令.`,
          ephemeral: true
       });
       Timeout.set(`${command.name}${interaction.user.id}`, Date.now() + command.cooldown)
