@@ -46,6 +46,15 @@ async function commandHandler(interaction) {
     content: '找不到指令',
     ephemeral: true
   });
+	
+if (command.cooldown) {
+      if (Timeout.has(`${command.name}${interaction.user.id}`)) return interaction.reply({
+         content: `⏲️ | 你需要再等待 \`${ms(Timeout.get(`${command.name}${interaction.user.id}`) - Date.now(), { long: true })}\` 才能再次使用此指令.`,
+         ephemeral: true
+      });
+      Timeout.set(`${command.name}${interaction.user.id}`, Date.now() + command.cooldown)
+      setTimeout(() => Timeout.delete(`${command.name}${interaction.user.id}`), 4500)
+}
 
   try {
     await command.execute(interaction);
