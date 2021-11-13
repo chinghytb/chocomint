@@ -5,8 +5,6 @@
 [![discord.js version](https://img.shields.io/github/package-json/dependency-version/kyometori/chocomint/discord.js)](https://discord.js.org)
 [![@kyometori/djsmusic verison](https://img.shields.io/github/package-json/dependency-version/kyometori/chocomint/@kyometori/djsmusic)](https://www.npmjs.com/package/@kyometori/djsmusic)
 
-[![chocomint ice!!!](./banner.png)](https://discord.com/oauth2/authorize?client_id=887896057621671997&permissions=517580573952&scope=bot%20applications.commands)
-
 ## 簡介
 一個現代化的 Discord 音樂機器人，使用 [@kyometori/djsmusic](https://www.npmjs.com/package/@kyometori/djsmusic) 套件製作
 
@@ -42,3 +40,5 @@
 
 ## 支援伺服器
 沒有這種東西，或著你可以到 [HiZollo 的支援伺服器](https://discord.gg/xUXTrYG2MZ) 或是 [MyIT 程式討論區](https://discord.gg/CNzNZSbkMa) 找到開發者，不過短期內不會為這台隨便弄的機器人開個支援伺服器。
+
+[![chocomint ice!!!](./banner.png)](https://discord.com/oauth2/authorize?client_id=887896057621671997&permissions=517580573952&scope=bot%20applications.commands)
