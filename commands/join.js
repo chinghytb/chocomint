@@ -58,6 +58,10 @@ module.exports = {
         channel.send({ embeds: [res] });
 
       });
+      
+      if (vc.type === "GUILD_STAGE_VOICE" && interaction.guild.me.voice.suppress) {
+            await interaction.guild.me.voice.setSuppressed(false);
+        }
     });
     res.setDescription(`已成功加入 ${vc.name}`);
     interaction.reply({ embeds: [res] });
