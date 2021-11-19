@@ -82,5 +82,8 @@ module.exports = {
         }
         throw e;
       });
+    if (interaction.member.voice.channel.type === "GUILD_STAGE_VOICE" && interaction.guild.me.voice.suppress) {
+      return interaction.guild.me.voice.setSuppressed(false);
+    }
   }
 }
